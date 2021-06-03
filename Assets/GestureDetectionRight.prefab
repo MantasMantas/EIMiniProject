@@ -1,0 +1,355 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8103478086399633598
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8103478086399633568}
+  - component: {fileID: 8103478086399633569}
+  m_Layer: 0
+  m_Name: GestureDetectionRight
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8103478086399633568
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8103478086399633598}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8103478086399633569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8103478086399633598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d08cd891140ecaa40a258f9a365f1882, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  threshold: 0.05
+  debugMode: 1
+  skeleton: {fileID: 0}
+  gestures:
+  - name: Lightning
+    fingerData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    - {x: -0.02006929, y: -0.011554113, z: -0.010496531}
+    - {x: -0.037919644, y: -0.023686362, z: -0.02281815}
+    - {x: -0.061789073, y: -0.04413828, z: -0.031128395}
+    - {x: -0.08883234, y: -0.059622433, z: -0.018056436}
+    - {x: -0.09599625, y: -0.00731642, z: -0.02355067}
+    - {x: -0.13350697, y: -0.01234444, z: -0.021072274}
+    - {x: -0.15449934, y: -0.024450969, z: -0.019222789}
+    - {x: -0.09564663, y: -0.0025431435, z: -0.0017259035}
+    - {x: -0.125176, y: -0.033508737, z: 0.0017200363}
+    - {x: -0.10555332, y: -0.05256122, z: -0.0015864087}
+    - {x: -0.08869383, y: -0.0065292716, z: 0.01746526}
+    - {x: -0.11369784, y: -0.03591602, z: 0.023114469}
+    - {x: -0.095769405, y: -0.052859608, z: 0.0132336}
+    - {x: -0.034073565, y: -0.009419812, z: 0.02299858}
+    - {x: -0.07789586, y: -0.013691189, z: 0.03505407}
+    - {x: -0.10532426, y: -0.022984652, z: 0.045303885}
+    - {x: -0.12032089, y: -0.03579971, z: 0.05014404}
+    - {x: -0.10537865, y: -0.0698528, z: -0.0029644412}
+    - {x: -0.17409554, y: -0.03479441, z: -0.016019573}
+    - {x: -0.08174806, y: -0.0479006, z: -0.007605151}
+    - {x: -0.07487121, y: -0.044768583, z: 0.0036308125}
+    - {x: -0.13852021, y: -0.04730855, z: 0.05444065}
+    OnRecognized:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: UnityEngine.ParticleSystem, UnityEngine
+          m_MethodName: Play
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+          m_MethodName: Play
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - name: TeleportAim
+    fingerData:
+    - {x: -0.00000003050737, y: 0.000000007843672, z: 0.0000000011649827}
+    - {x: -0.00000003050737, y: 0.000000007843672, z: 0.0000000011649827}
+    - {x: -0.020069232, y: -0.011554096, z: -0.010496478}
+    - {x: -0.03668563, y: -0.020761905, z: -0.026520327}
+    - {x: -0.058442023, y: -0.040566478, z: -0.04035988}
+    - {x: -0.08488035, y: -0.05811569, z: -0.02874064}
+    - {x: -0.095996276, y: -0.007316456, z: -0.023550712}
+    - {x: -0.12564695, y: -0.030928997, z: -0.022221193}
+    - {x: -0.11791742, y: -0.053953942, z: -0.02134077}
+    - {x: -0.0956466, y: -0.0025431584, z: -0.0017258823}
+    - {x: -0.13431829, y: -0.02110263, z: -0.00006151389}
+    - {x: -0.15270257, y: -0.041611716, z: 0.0005537385}
+    - {x: -0.08869389, y: -0.0065293144, z: 0.017465282}
+    - {x: -0.124621816, y: -0.01945676, z: 0.025386786}
+    - {x: -0.14242984, y: -0.039092906, z: 0.027242823}
+    - {x: -0.034073524, y: -0.009419835, z: 0.022998577}
+    - {x: -0.07789581, y: -0.013691197, z: 0.035054103}
+    - {x: -0.10236058, y: -0.02286449, z: 0.051211786}
+    - {x: -0.11500698, y: -0.037065443, z: 0.058350187}
+    - {x: -0.102842316, y: -0.072939426, z: -0.020750716}
+    - {x: -0.10519131, y: -0.07228879, z: -0.019569214}
+    - {x: -0.16756897, y: -0.061695516, z: 0.0010698963}
+    - {x: -0.15657377, y: -0.058944713, z: 0.026724542}
+    - {x: -0.12936878, y: -0.052970573, z: 0.06313479}
+    OnRecognized:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: Teleportation, Assembly-CSharp
+          m_MethodName: toggleEnable
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - name: Teleport
+    fingerData:
+    - {x: -0.0000000052657114, y: 0.00000000710599, z: -0.00000002880448}
+    - {x: -0.0000000052657114, y: 0.00000000710599, z: -0.00000002880448}
+    - {x: -0.020069256, y: -0.011554097, z: -0.01049654}
+    - {x: -0.037914872, y: -0.023674453, z: -0.022836715}
+    - {x: -0.061358504, y: -0.044669278, z: -0.031004058}
+    - {x: -0.089604005, y: -0.062307727, z: -0.025254952}
+    - {x: -0.09599621, y: -0.0073164385, z: -0.023550723}
+    - {x: -0.12542634, y: -0.03052496, z: -0.017743977}
+    - {x: -0.12284592, y: -0.054675657, z: -0.016876493}
+    - {x: -0.09564665, y: -0.0025431605, z: -0.0017258887}
+    - {x: -0.1124381, y: -0.042042296, z: -0.0009548447}
+    - {x: -0.08544352, y: -0.046872273, z: -0.0035901165}
+    - {x: -0.08869381, y: -0.006529301, z: 0.01746524}
+    - {x: -0.09540689, y: -0.044840172, z: 0.014653027}
+    - {x: -0.0696428, y: -0.04789448, z: 0.008905762}
+    - {x: -0.034073584, y: -0.009419844, z: 0.022998596}
+    - {x: -0.077895835, y: -0.013691184, z: 0.03505405}
+    - {x: -0.078827366, y: -0.04315886, z: 0.026420815}
+    - {x: -0.059304215, y: -0.045140192, z: 0.021179445}
+    - {x: -0.10835153, y: -0.075179964, z: -0.015818534}
+    - {x: -0.111464255, y: -0.07395453, z: -0.016674602}
+    - {x: -0.06744972, y: -0.029985819, z: -0.0075537893}
+    - {x: -0.050758965, y: -0.033091314, z: 0.004583763}
+    - {x: -0.0426895, y: -0.031362154, z: 0.017148716}
+    OnRecognized:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: Teleportation, Assembly-CSharp
+          m_MethodName: Teleport
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - name: Shielding
+    fingerData:
+    - {x: 0.000000042661668, y: 0.000000040163346, z: -0.00000002810008}
+    - {x: 0.000000042661668, y: 0.000000040163346, z: -0.00000002810008}
+    - {x: -0.02006932, y: -0.011554105, z: -0.010496512}
+    - {x: -0.03496484, y: -0.017049557, z: -0.02961648}
+    - {x: -0.054724112, y: -0.03401136, z: -0.049083304}
+    - {x: -0.080518514, y: -0.05026445, z: -0.06365932}
+    - {x: -0.09599617, y: -0.0073164837, z: -0.023550687}
+    - {x: -0.13383049, y: -0.0060670264, z: -0.025892368}
+    - {x: -0.15774763, y: -0.010235479, z: -0.027018208}
+    - {x: -0.09564659, y: -0.002543143, z: -0.0017259081}
+    - {x: -0.13804398, y: -0.001964901, z: 0.004971387}
+    - {x: -0.16476308, y: -0.00714578, z: 0.009241009}
+    - {x: -0.088693805, y: -0.0065293377, z: 0.017465256}
+    - {x: -0.126105, y: -0.0026610994, z: 0.02776736}
+    - {x: -0.15101443, y: -0.01028161, z: 0.033020176}
+    - {x: -0.034073588, y: -0.0094198175, z: 0.022998577}
+    - {x: -0.07789588, y: -0.013691197, z: 0.035054084}
+    - {x: -0.10520872, y: -0.01569331, z: 0.04897343}
+    - {x: -0.12205462, y: -0.023239462, z: 0.057448078}
+    - {x: -0.09720042, y: -0.06360253, z: -0.07590749}
+    - {x: -0.179799, y: -0.01408477, z: -0.026594827}
+    - {x: -0.18910405, y: -0.010760233, z: 0.013610023}
+    - {x: -0.17440796, y: -0.015863193, z: 0.037020613}
+    - {x: -0.14158478, y: -0.02981326, z: 0.0650301}
+    OnRecognized:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: Shielding, Assembly-CSharp
+          m_MethodName: toggleRight
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - name: GroundSlam
+    fingerData:
+    - {x: 0.000000009133959, y: 0.00000006425638, z: -0.00000035051588}
+    - {x: 0.000000009133959, y: 0.00000006425638, z: -0.00000035051588}
+    - {x: -0.020069309, y: -0.0115541015, z: -0.01049685}
+    - {x: -0.037243836, y: -0.022043336, z: -0.025078336}
+    - {x: -0.058845207, y: -0.043603588, z: -0.036287554}
+    - {x: -0.08387993, y: -0.060388025, z: -0.021006454}
+    - {x: -0.09599628, y: -0.007316487, z: -0.023550361}
+    - {x: -0.11583287, y: -0.039567888, z: -0.02135369}
+    - {x: -0.09219422, y: -0.045212507, z: -0.021491038}
+    - {x: -0.095646665, y: -0.0025431365, z: -0.0017256995}
+    - {x: -0.11000606, y: -0.042996056, z: -0.0014161743}
+    - {x: -0.08278309, y: -0.046638828, z: -0.0035647305}
+    - {x: -0.08869377, y: -0.00652934, z: 0.017465536}
+    - {x: -0.09438597, y: -0.045052342, z: 0.015396693}
+    - {x: -0.069275215, y: -0.04642155, z: 0.006810106}
+    - {x: -0.03407356, y: -0.009419891, z: 0.022998612}
+    - {x: -0.07789596, y: -0.013691288, z: 0.035054773}
+    - {x: -0.07977876, y: -0.0432926, z: 0.027056796}
+    - {x: -0.06134578, y: -0.044381388, z: 0.018595373}
+    - {x: -0.09705829, y: -0.06894369, z: -0.00205168}
+    - {x: -0.0802759, y: -0.02630193, z: -0.022751583}
+    - {x: -0.070891276, y: -0.025023274, z: -0.0075616003}
+    - {x: -0.0575388, y: -0.025458656, z: 0.0026591704}
+    - {x: -0.048614077, y: -0.02725592, z: 0.013423575}
+    OnRecognized:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: GroundSlam, Assembly-CSharp
+          m_MethodName: toggleRight
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: UnityEngine.ParticleSystem, UnityEngine
+          m_MethodName: Stop
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: UnityEngine.ParticleSystem, UnityEngine
+          m_MethodName: Play
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+          m_MethodName: Play
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - name: FireBall
+    fingerData:
+    - {x: 0.00000002308548, y: -0.00000002368255, z: -0.0000000031045335}
+    - {x: 0.00000002308548, y: -0.00000002368255, z: -0.0000000031045335}
+    - {x: -0.020069316, y: -0.011554051, z: -0.010496511}
+    - {x: -0.035750337, y: -0.018709185, z: -0.028400674}
+    - {x: -0.05147126, y: -0.042538073, z: -0.043961205}
+    - {x: -0.075160526, y: -0.06648887, z: -0.04663449}
+    - {x: -0.09599623, y: -0.007316385, z: -0.023550667}
+    - {x: -0.13108203, y: -0.021279799, z: -0.027085302}
+    - {x: -0.14863306, y: -0.03804109, z: -0.028383257}
+    - {x: -0.09564658, y: -0.0025430932, z: -0.001725886}
+    - {x: -0.13685459, y: -0.013120449, z: 0.0039969855}
+    - {x: -0.15162173, y: -0.036324043, z: 0.0055792243}
+    - {x: -0.08869375, y: -0.006529313, z: 0.01746525}
+    - {x: -0.123175, y: -0.021030698, z: 0.028485913}
+    - {x: -0.13646798, y: -0.043991815, z: 0.029977454}
+    - {x: -0.034073606, y: -0.00941988, z: 0.022998575}
+    - {x: -0.07789582, y: -0.013691219, z: 0.035054073}
+    - {x: -0.09867546, y: -0.03196107, z: 0.048401978}
+    - {x: -0.10443927, y: -0.051433682, z: 0.048787113}
+    - {x: -0.09136202, y: -0.08497595, z: -0.045237828}
+    - {x: -0.15621276, y: -0.05909356, z: -0.027604647}
+    - {x: -0.15529753, y: -0.061024353, z: 0.004571149}
+    - {x: -0.13772987, y: -0.06782447, z: 0.024994703}
+    - {x: -0.10938883, y: -0.07231365, z: 0.044133503}
+    OnRecognized:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: UnityEngine.ParticleSystem, UnityEngine
+          m_MethodName: Play
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+          m_MethodName: Play
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
